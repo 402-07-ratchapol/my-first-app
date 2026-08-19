@@ -103,11 +103,11 @@ ans2 = st.text_input(
     value=st.session_state.ans2_val,
 )
 ans1 = st.text_input(
-    "ข้อ 3: To write, you need a `p _ n`. 🍎",
+    "ข้อ 3: To write, you need a `p _ n`. 🖋️",
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 4: Everyone must count the `n _ m  _ e r s`. 🐟",
+    "ข้อ 4: Everyone must count the `n _ m  _ e r s`. 🔢",
     value=st.session_state.ans4_val,
 )
 
