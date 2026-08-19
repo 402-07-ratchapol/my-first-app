@@ -102,7 +102,7 @@ ans2 = st.text_input(
     "ข้อ 2: Cats love to eat `f _ s h`. 🐟",
     value=st.session_state.ans2_val,
 )
-ans1 = st.text_input(
+ans3 = st.text_input(
     "ข้อ 3: To write, you need a `p _ n`. 🖋️",
     value=st.session_state.ans3_val,
 )
@@ -131,7 +131,7 @@ if "start" in st.session_state and not st.session_state.get("is_ended", False):
 
 # 5. แสดง Dialog ผลลัพธ์
 if st.session_state.get("is_ended", False):
-    show_result_dialog(ans1, ans2)
+    show_result_dialog(ans1, ans2, ans3, ans4)
 
 st.divider()
 st.write("นายรัชพล ฟองวรรณา เลขที่ 7 ม.4/2")
