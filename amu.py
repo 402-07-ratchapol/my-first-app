@@ -22,4 +22,27 @@ if m > 0:
 else:
     st.warning("⚠️ กรุณากรอกระยะการกระจัดของโค้ง (m) ให้มากกว่า 0 เพื่อเริ่มคำนวณ")
 
+if R < 20:
+    if v_max < 20:
+         st.success("✔️  โค้งที่ปลอดภัย")
+       elif 20 <= v_max < 30:
+         st.warning("❗ โค้งเริ่มอัตราย")
+       elif 30 < v_max:
+         st.error("🛑 โค้งนี้อันตรายมาก")
+  elif 20 <= R < 80:
+    if v_max < 30:
+         st.success("✔️  โค้งที่ปลอดภัย")
+       elif 30 <= v_max < 40:
+         st.warning("❗ โค้งเริ่มอัตราย")
+       elif 40 < v_max:
+         st.error("🛑 โค้งนี้อันตรายมาก")
+  elif 80 <= R:
+      if v_max < 40:
+         st.success("✔️  โค้งที่ปลอดภัย")
+       elif 40 <= v_max < 50:
+         st.warning("❗ โค้งเริ่มอัตราย")
+       elif 50 < v_max:
+         st.error("🛑 โค้งนี้อันตรายมาก")
+ 
+
 st.divider()
